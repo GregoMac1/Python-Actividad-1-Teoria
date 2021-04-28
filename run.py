@@ -1,3 +1,4 @@
 from src.component import main_window
 
-main_window.start()
+if __name__ == '__main__':
+    main_window.start()

@@ -1,4 +1,5 @@
 import PySimpleGUI as sg
+sg.theme('DefaultNoMoreNagging')
 
 def build():
     layout = [
@@ -8,5 +9,5 @@ def build():
         [sg.Button('Salir',key='-EXIT-',size=(30,1))]
     ]
 
-    window = sg.Window(f'Actividad 1 de Teoría',layout,font=('Arial',16),element_justification='center')
+    window = sg.Window('',layout,font=('Bahnschrift SemiLight',16),element_justification='center',no_titlebar=True,grab_anywhere=True)
     return window
