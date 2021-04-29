@@ -3,8 +3,8 @@ from src import constants
 
 sg.theme('DefaultNoMoreNagging')
 
-texto_uno = 'Obtener las canciones de la banda Foo Fighters cuya fecha de lanzamiento sea entre el 2000 y el 2010 en un archivo JSON.'
-texto_dos = ''
+texto_uno = 'Obtener las canciones de la banda Foo Fighters cuya fecha de lanzamiento sea entre el 2000 y el 2010.'
+texto_dos = 'Obtener los partidos de Argentina pertenecientes a los dos mundiales que ganó (1978 y 1986).'
 
 def build():
     left_col_layout = [

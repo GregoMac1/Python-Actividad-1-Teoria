@@ -13,11 +13,11 @@ def start(name_of_dataset):
     new_data = []
     for song in data:
         dict = {}
-        for i,j in zip(keys,data):
-            dict[i] = j
+        for i in range(len(keys)):
+            dict[keys[i]] = song[i]
         new_data.append(dict)
     
-    json.dump(new_data,json_file)
+    json.dump(new_data,json_file,indent=4)
 
     file.close()
     json_file.close()
