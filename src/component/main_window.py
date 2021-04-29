@@ -7,7 +7,7 @@ from src import constants
 def start():
     window = main_window.build()
     while True:
-        event, values = window.read()
+        event, _values = window.read()
 
         if event in ('Salir','-EXIT-'):
             break
