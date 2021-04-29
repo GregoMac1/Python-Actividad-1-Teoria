@@ -2,5 +2,5 @@ src/__pycache__/
 src/component/__pycache__/
 src/windows/__pycache__/
 src/handlers/__pycache__/
-.vscode/settings.json
-resources/datasets/history-of-rock-spotify.json
+*.json
+*.csv#

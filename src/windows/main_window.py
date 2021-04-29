@@ -10,12 +10,12 @@ def build():
     left_col_layout = [
         [sg.Text(texto_uno,size=(35,4),justification='c')],
         [sg.Button('Analizar canciones de Rock',key=('-OPTION_ONE-'),size=(30,1))],
-        [sg.Text(f'Dataset: {constants.first}',size=(20,4),justification='c')]
+        [sg.Text(f'Dataset:\n{constants.first}',size=(30,4),justification='c')]
     ]
     right_col_layout = [
         [sg.Text(texto_dos,size=(35,4),justification='c')],
-        [sg.Button('Analizar canciones de Rock',key=('-OPTION_TWO-'),size=(30,1))],
-        [sg.Text(f'Dataset: {constants.second}',size=(20,4),justification='c')]
+        [sg.Button('Analizar resultados de fútbol',key=('-OPTION_TWO-'),size=(30,1))],
+        [sg.Text(f'Dataset:\n{constants.second}',size=(30,4),justification='c')]
     ]
 
     layout = [

@@ -1,6 +1,7 @@
 import PySimpleGUI as sg
 from src.windows import main_window
 from src.handlers import dataset_one
+from src.handlers import dataset_two
 from src import constants
 
 def start():
@@ -14,8 +15,8 @@ def start():
         if event == '-OPTION_ONE-':
             dataset_one.start(constants.first)
             sg.popup('Archivo JSON generado exitosamente.',title='Éxito',font=('Bahnschrift SemiLight',16))
-        '''elif event == '-OPTION_TWO-':
+        elif event == '-OPTION_TWO-':
             dataset_two.start(constants.second)
-            sg.popup('Archivo JSON generado exitosamente.',title='Éxito',font=('Bahnschrift SemiLight',16))'''
+            sg.popup('Archivo JSON generado exitosamente.',title='Éxito',font=('Bahnschrift SemiLight',16))
 
     window.close()
