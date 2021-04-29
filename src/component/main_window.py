@@ -13,9 +13,9 @@ def start():
 
         if event == '-OPTION_ONE-':
             dataset_one.start(constants.first)
-            sg.popup('Archivo JSON generado exitosamente.')
+            sg.popup('Archivo JSON generado exitosamente.',title='Éxito',font=('Bahnschrift SemiLight',16))
         '''elif event == '-OPTION_TWO-':
             dataset_two.start(constants.second)
-            sg.popup('Archivo JSON generado exitosamente.')'''
+            sg.popup('Archivo JSON generado exitosamente.',title='Éxito',font=('Bahnschrift SemiLight',16))'''
 
     window.close()
