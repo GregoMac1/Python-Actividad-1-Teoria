@@ -1,20 +1,20 @@
 import json
 import csv
 
-def start(name_of_dataset):
+def start(name_of_dataset, function):
     file = open(f'resources/datasets/{name_of_dataset}.csv', 'r', encoding='utf-8')
     json_file = open(f'resources/datasets/{name_of_dataset}.json', 'w')
     
     file_content = csv.reader(file, delimiter=',')
     keys, data = next(file_content), list(file_content)
-
-    data = list(filter(lambda match: (match[1] == 'Argentina' or match[2] == 'Argentina') and match[5] == 'FIFA World Cup' and (match[0].startswith('1978') or match[0].startswith('1986')),data))
+    
+    data = list(filter(function,data))
 
     new_data = []
-    for match in data:
+    for element in data:
         dict = {}
         for i in range(len(keys)):
-            dict[keys[i]] = match[i]
+            dict[keys[i]] = element[i]
         new_data.append(dict)
     
     json.dump(new_data,json_file,indent=4)
