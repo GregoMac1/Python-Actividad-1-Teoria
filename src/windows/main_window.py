@@ -21,7 +21,7 @@ def build():
     layout = [
         [sg.Text('Escoja los datos a analizar',font=('Bahnschrift SemiLight',32),size=(30,2),justification='center')],
         [sg.Column(left_col_layout, element_justification='c'), sg.Column(right_col_layout, element_justification='c')],
-        [sg.Button('Salir',key='-EXIT-',size=(30,1))]
+        [sg.Button('Salir',key='-EXIT-',size=(8,1))]
     ]
 
     window = sg.Window('',layout,font=('Bahnschrift SemiLight',16),element_justification='center',no_titlebar=True,grab_anywhere=True)
